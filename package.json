@@ -1,0 +1,28 @@
+{
+  "name": "bootstrap-postcss-boilerplate",
+  "title": "Postcss Boilerplate",
+  "author": "Ivan Baresic",
+  "url": "https://www.linkedin.com/in/ibaresic",
+  "version": "1.0.1",
+  "license": "MIT",
+  "repository": "https://github.com/ajvanho6/bootstrap4-postcss-bolierplate.git",
+  "description" : "Bolierplate bootstrap-postcss",
+  "devDependencies": {
+    "browser-sync": "^2.10.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-clean-css": "^3.0.3",
+    "gulp-compass": "^2.1.0",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-jshint": "^2.0.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.0",
+    "jshint": "^2.8.0",
+    "lost": "^8.0.0",
+    "postcss-pxtorem": "^4.0.0",
+    "postcss-vertical-rhythm": "^1.1.5",
+    "rucksack-css": "^0.9.1"
+  }
+}

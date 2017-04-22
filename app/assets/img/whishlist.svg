@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="35px" height="35px" viewBox="0 0 35 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Button Add to Wishlist Active</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="35" height="35" rx="17.5"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="35" height="35" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Listing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mockup---Desktop-Listing-Page" transform="translate(-830.000000, -110.000000)">
+            <g id="Product-Line-1" transform="translate(40.000000, 100.000000)">
+                <g id="Product-Card-3" transform="translate(570.000000, -0.000000)">
+                    <g id="Button-Add-to-Wishlist-Active" transform="translate(220.000000, 10.000000)">
+                        <use id="Base" stroke="#D9D9D9" mask="url(#mask-2)" stroke-width="2" fill="#FFFFFF" xlink:href="#path-1"></use>
+                        <polygon id="Wishlist-Icon" fill="#D9D9D9" points="20.3598869 15.2675869 28 15.2675869 21.8200565 19.7545318 24.1782804 27.0221187 17.9983369 22.5318477 11.8183935 27.0221187 14.1799435 19.7545318 8 15.2675869 15.636787 15.2675869 17.9983369 8"></polygon>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

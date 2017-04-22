@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="17px" viewBox="0 0 17 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Bag Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Listing-Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mockup---Desktop-Listing-Page" transform="translate(-1083.000000, -22.000000)" fill="#444A59">
+            <g id="Header">
+                <g id="Header-Icons" transform="translate(1047.000000, 14.000000)">
+                    <g id="Icons">
+                        <g id="Bag">
+                            <path d="M52.997701,12.8571429 L49.3553365,12.8571429 L49.3553365,8 L39.6423645,8 L39.6423645,12.8571429 L36,12.8571429 L36,25 L52.997701,25 L52.997701,12.8571429 Z M42.0706075,10.4285714 L46.9270935,10.4285714 L46.9270935,12.8571429 L42.0706075,12.8571429 L42.0706075,10.4285714 Z" id="Bag-Icon"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

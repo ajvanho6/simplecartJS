@@ -1,0 +1,40 @@
+//Colors
+$in_cart:#D9D9D9;
+$add_to:#444A59;
+$number:#358ED7;
+$white:#ffffff;
+$gray:#808080;
+$gray-2:#D9D9D9;
+$red:#F54B5E;
+
+
+
+//fonts
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../fonts/Lato-Regular.eot');
+	src: url('../fonts/Lato-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Lato-Regular.woff2') format('woff2'),
+		url('../fonts/Lato-Regular.woff') format('woff'),
+		url('../fonts/Lato-Regular.ttf') format('truetype'),
+		url('../fonts/Lato-Regular.svg#Lato-Regular') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato_Bold';
+	src: url('../fonts/Lato-Bold.eot');
+	src: url('../fonts/Lato-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Lato-Bold.woff2') format('woff2'),
+		url('../fonts/Lato-Bold.woff') format('woff'),
+		url('../fonts/Lato-Bold.ttf') format('truetype'),
+		url('../fonts/Lato-Bold.svg#Lato-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+
+
+$regular:'Lato';
+$bold:'Lato_Bold';

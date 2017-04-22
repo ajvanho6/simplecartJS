@@ -1,0 +1,78 @@
+header {
+  background: $white;
+  width:100%;
+  max-width: 1200px;
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+
+  h1{
+    display: block;
+    margin: 0px;
+    font-size:20px;
+    font-family: $regular;
+    letter-spacing: 1.4px;
+    color:$add_to;
+    padding: 19px 0 19px 40px;
+  }
+
+  ul{
+    margin:0;
+    padding-right: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  ul li {
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+    text-align: center;
+    margin-right: 18px;
+  }
+
+  ul li:last-child{
+    margin-right: 0px;
+  }
+
+  img{
+    vertical-align: inherit;
+  }
+
+  ul li span{
+    display: block;
+    color:$add_to;
+    font-size: 12px;
+    font-family: $regular;
+    line-height: 15px;
+
+  }
+
+  ul li span.fav,ul li span.num{
+    position: absolute;
+    color: $white;
+    background: $number;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    font-size: 8px;
+    font-family: $bold;
+  }
+
+  ul li span.num{
+    top:-8px;
+    right:-13px;
+  }
+
+  ul li span.fav{
+    top:-7px;
+    right:-10px;
+  }
+
+  ul li span.total{
+    position: absolute;
+    left:0;
+    bottom:-15px;
+  }
+}

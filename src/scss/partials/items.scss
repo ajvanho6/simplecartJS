@@ -1,0 +1,157 @@
+.mar{
+  margin-bottom: 20px;
+}
+
+.item {
+  background: $white;
+  padding: 20px;
+  position: relative;
+
+  .star{
+    position: absolute;
+    top:10px;
+    right: 10px;
+  }
+
+  &__image{
+    margin:0 auto;
+    display: block;
+    padding-bottom: 18px;
+  }
+
+  &__data--title{
+    margin:10px 0;
+    letter-spacing: 1.4px;
+    font-family: $bold;
+    color:$add_to;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  &__data--desc{
+    color:$gray;
+    font-family: $regular;
+    letter-spacing: 0.4px;
+    font: 12px;
+    margin-bottom: 10px;
+    display: block;
+    line-height: 19px;
+  }
+
+
+  &__data--price span{
+    letter-spacing: 1.4px;
+    font-family: $bold;
+    color:$add_to;
+    font-size: 14px;
+    display: inline-block;
+    line-height: 17px;
+  }
+
+  &__data--price span.regular.off{
+    text-decoration: line-through;
+    margin-right: 8px;
+  }
+
+  &__data--price span.reduced{
+    color:$red;
+  }
+
+  &__data--button{
+    background: $white;
+    border: 1px solid #D9D9D9;
+    border-radius: 100px;
+    transition: all .3s ease;
+    margin-top: 20px;
+
+    &:hover{
+      cursor: pointer;
+      transition: all .3s ease;
+      background: $add_to;
+      border: 1px solid $add_to;
+    }
+  }
+
+  &__data--button:hover .hovered{
+    color:$white;
+  }
+
+  &__data--button.added{
+    background: $gray-2;
+    border: 1px solid $gray-2;
+  }
+
+  &__data--button span{
+    margin:13px 0;
+    letter-spacing: 1.4px;
+    font-family: $bold;
+    color:$add_to;
+    font-size: 13px;
+    display: block;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+
+    &__data--number{
+      letter-spacing: 1.4px;
+      font-family: $bold;
+      color:$add_to;
+      font-size: 14px;
+      display: block;
+      line-height: 17px;
+      position: absolute;
+      left:0;
+      right: 0;
+    }
+}
+
+.page__ination{
+  padding: 40px 0px 50px 0px;
+  border-radius: 0;
+}
+.page__ination ul{
+  margin:0;
+  padding:0;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page__ination ul li{
+  list-style-type: none;
+  display: inline-block;
+  width:46px;
+
+}
+
+.page__ination ul li a{
+  display: block;
+  letter-spacing: 1.4px;
+  font-family: $bold;
+  color:$add_to;
+  font-size: 13px;
+  line-height: 16px;
+  padding: 15px 0;
+}
+
+.page__ination ul li a:hover,
+.page__ination ul li a:focus{
+  text-decoration: none;
+}
+
+.page__ination ul li.active a{
+  text-decoration: underline;
+}
+
+.page__ination ul li:first-child a{
+  background: url(../../assets/img/left_icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.page__ination ul li:last-child a{
+  background: url(../../assets/img/right_icon.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
