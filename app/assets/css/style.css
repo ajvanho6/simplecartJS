@@ -7174,7 +7174,9 @@ img {
 .item {
   background: #ffffff;
   padding: 20px;
-  position: relative; }
+  position: relative;
+  margin: 0 auto;
+  max-width: 265px; }
   .item .star {
     position: absolute;
     top: 10px;
