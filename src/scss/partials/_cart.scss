@@ -1,0 +1,89 @@
+.cart__list {
+  margin:0;
+  padding: 0;
+}
+
+.cart__list li{
+  list-style-type: none;
+  display: block;
+  border-bottom:1px solid #efefef;
+  overflow: hidden;
+  color:$add_to;
+  font-family: $regular;
+  letter-spacing: 1.2px;
+  font-size: 12px;
+  padding: 10px 0;
+  position: relative;
+}
+
+.cart__list img{
+  width:40px;
+  margin-right: 20px;
+  float:left;
+}
+
+.cart__list h6{
+  letter-spacing: 1.2px;
+  font-family: $bold;
+  color:$add_to;
+  font-size: 12px;
+  line-height: 14px;
+}
+.modal-title{
+  letter-spacing: 1.4px;
+  font-family: $bold;
+  color:$add_to;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+}
+
+.modal-content{
+  border-radius: 0;
+}
+
+.modal-header .close{
+  opacity: 1;
+}
+
+.modal-header .close span{
+  color:$add_to;
+  font-weight: 400;
+}
+
+.modal-header .close:hover, .modal-header .close:focus{
+  opacity:1;
+}
+
+.modal-body{
+  padding: 10px 15px;
+}
+
+.modal-body .total_price{
+  letter-spacing: 1.4px;
+  font-family: $bold;
+  color:$add_to;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  text-align: right;
+  padding-top: 10px;
+}
+
+.total_price .simpleCart_grandTotal{
+  display: inline-block;
+}
+
+span.remove__cart {
+    display: block;
+    font-size: 30px;
+    padding: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 20;
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    right: 20px;
+    cursor: pointer;
+}

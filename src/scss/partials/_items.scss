@@ -13,6 +13,12 @@
     position: absolute;
     top:10px;
     right: 10px;
+    width: 35px;
+    height: 35px;
+    background-image: url('../../assets/img/whishlist.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all .1s ease;
   }
 
   &__image{
@@ -28,6 +34,7 @@
     color:$add_to;
     font-size: 14px;
     line-height: 17px;
+    text-transform: uppercase;
   }
 
   &__data--desc{
@@ -50,12 +57,12 @@
     line-height: 17px;
   }
 
-  &__data--price span.regular.off{
+  &__data--price span.discount.off{
     text-decoration: line-through;
     margin-right: 8px;
   }
 
-  &__data--price span.reduced{
+  &__data--price span.discount{
     color:$red;
   }
 
@@ -76,6 +83,7 @@
 
   &__data--button:hover .hovered{
     color:$white;
+    text-decoration:none;
   }
 
   &__data--button.added{
@@ -83,8 +91,8 @@
     border: 1px solid $gray-2;
   }
 
-  &__data--button span{
-    margin:13px 0;
+  &__data--button a{
+    padding:13px 0;
     letter-spacing: 1.4px;
     font-family: $bold;
     color:$add_to;
@@ -92,7 +100,12 @@
     display: block;
     line-height: 16px;
     text-transform: uppercase;
+    width: 100%;
   }
+
+    &__data--button a:focus,   &__data--button a:hover{
+      text-decoration: none;
+    }
 
     &__data--number{
       letter-spacing: 1.4px;
@@ -104,6 +117,15 @@
       position: absolute;
       left:0;
       right: 0;
+      max-width: 40px;
+      text-align: center;
+      margin: 0 auto;
+      width:100%;
+      border:none;
+
+      &:hover{
+        cursor: pointer;
+      }
     }
 }
 
@@ -156,4 +178,9 @@
   background: url(../../assets/img/right_icon.svg);
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.star.selected{
+  background-image: url('../../assets/img/active_whish.svg') !important;
+  transition: all .1s ease;
 }

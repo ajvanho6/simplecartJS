@@ -5,7 +5,8 @@
   <title>Shoping Cart</title>
 
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="">
+  <meta name="description" content="Simple Shoping Cart">
+  <meta name="keywords" content="shoping cart,famous brands,best prices,unique style">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="assets/css/style.min.css" rel="stylesheet">
 
@@ -19,9 +20,9 @@
   <header>
     <h1 class="text-left text-uppercase">Brand</h1>
     <ul>
-      <li><span>£</span><span class="total">335</span></li>
-      <li><img src="./assets/img/bag_icon.svg" alt=""><span class="num">3</span></li>
-      <li><img src="./assets/img/wishlist_Icon.svg" alt=""><span class="fav">1</span></li>
+      <li><span>£</span><span class="total simpleCart_total">335</span></li>
+      <li><img src="./assets/img/bag_icon.svg" alt="Bag" data-toggle="modal" data-target="#cartModal"><span class="num simpleCart_quantity">0</span></li>
+      <li><img src="./assets/img/wishlist_Icon.svg" alt="Whishlist"><span class="fav">0</span></li>
     </ul>
   </header>
 
@@ -29,155 +30,178 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6 col-lg-4 col-xl-3 mar">
-          <div class="item text-center">
-            <img src="./assets/img/whishlist.svg" alt="" class="star">
-            <img src="./assets/img/img_1.jpg" class="item__image" alt="">
+          <div class="item text-center simpleCart_shelfItem">
+            <div class="star"></div>
+            <img src="./assets/img/img_1.jpg" class="item__image" alt="Logo appliquè sweatshirt" data-src="./assets/img/img_1.jpg">
             <div class="item__data">
-              <h4 class="item__data--title text-uppercase">MCQ ALEXANDER MCQUEEN</h4>
+              <h4 class="item__data--title item_name" data-title="MCQ ALEXANDER MCQUEEN">MCQ ALEXANDER MCQUEEN</h4>
               <span class="item__data--desc">Logo appliquè sweatshirt</span>
               <div class="item__data--price">
-                <span class="regular off">£210</span>
-                <span class="reduced">£137.50</span>
+                <span class="discount off">£210</span>
+                <span class="regular item_price" data-price="£137.50">£137.50</span>
               </div>
-              <span class="item__data--number"></span>
+              <input type="text" value="0" class="item__data--number item_Quantity" maxlength="3">
               <div class="item__data--button">
-                <span class="hovered">Add to cart</span>
+                <a class="item_add hovered" href="javascript:;">Add to cart</a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 col-xl-3 mar">
-          <div class="item text-center">
-            <img src="./assets/img/whishlist.svg" alt="" class="star">
-            <img src="./assets/img/img_2.jpg" class="item__image" alt="">
+          <div class="item text-center simpleCart_shelfItem">
+            <div class="star"></div>
+            <img src="./assets/img/img_2.jpg" class="item__image" alt="Spray paint checked shirt" data-src="./assets/img/img_2.jpg">
             <div class="item__data">
-              <h4 class="item__data--title">OFF-WHITE</h4>
+              <h4 class="item__data--title item_name" data-title="OFF-WHITE">OFF-WHITE</h4>
               <span class="item__data--desc">Spray paint checked shirt</span>
               <div class="item__data--price">
                 <span class="discount"></span>
-                <span class="regular">£33</span>
+                <span class="regular item_price" data-price="£33">£33</span>
               </div>
-              <span class="item__data--number">5</span>
-              <div class="item__data--button added">
-                <span class="hovered">In cart</span>
+              <input type="text" value="5" class="item__data--number item_Quantity" maxlength="3">
+              <div class="item__data--button">
+                <a class="item_add hovered" href="javascript:;">Add to cart</a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 col-xl-3 mar">
-          <div class="item text-center">
-            <img src="./assets/img/whishlist.svg" alt="" class="star">
-            <img src="./assets/img/img_3.jpg" class="item__image" alt="">
+          <div class="item text-center simpleCart_shelfItem">
+            <div class="star"></div>
+            <img src="./assets/img/img_3.jpg" class="item__image" alt="Lightning bolt print T-shirt" data-src="./assets/img/img_3.jpg">
             <div class="item__data">
-              <h4 class="item__data--title text-uppercase">Neil Barrettt</h4>
+              <h4 class="item__data--title item_name" data-title="Neil Barrettt">Neil Barrettt</h4>
               <span class="item__data--desc">Lightning bolt print T-shirt</span>
               <div class="item__data--price">
                 <span class="discount"></span>
-                <span class="regular">£175</span>
+                <span class="regular item_price" data-price="£175">£175</span>
               </div>
+              <input type="text" value="0" class="item__data--number item_Quantity" maxlength="3">
               <div class="item__data--button">
-                <span class="hovered">Add to cart</span>
+                <a class="item_add hovered" href="javascript:;">Add to cart</a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 col-xl-3 mar">
-          <div class="item text-center">
-            <img src="./assets/img/whishlist.svg" alt="" class="star">
-            <img src="./assets/img/img_4.jpg" class="item__image" alt="">
+          <div class="item text-center simpleCart_shelfItem">
+            <div class="star"></div>
+            <img src="./assets/img/img_4.jpg" class="item__image" alt="Gorilla print sweatshirt" data-src="./assets/img/img_4.jpg">
             <div class="item__data">
-              <h4 class="item__data--title text-uppercase">MARCELO BURLON County</h4>
+              <h4 class="item__data--title item_name" data-title="MARCELO BURLON County">MARCELO BURLON County</h4>
               <span class="item__data--desc">Gorilla print sweatshirt</span>
               <div class="item__data--price">
                 <span class="discount"></span>
-                <span class="regular">£27</span>
+                <span class="regular item_price" data-price="£27">£27</span>
               </div>
-              <span class="item__data--number">0</span>
+              <input type="text" value="0" class="item__data--number item_Quantity" maxlength="3">
               <div class="item__data--button">
-                <span class="hovered">Add to cart</span>
+                <a class="item_add hovered" href="javascript:;">Add to cart</a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 col-xl-3 mar">
-          <div class="item text-center">
-            <img src="./assets/img/whishlist.svg" alt="" class="star">
-            <img src="./assets/img/img_5.jpg" class="item__image" alt="">
+          <div class="item text-center simpleCart_shelfItem">
+            <div class="star"></div>
+            <img src="./assets/img/img_5.jpg" class="item__image" alt="Unicorn print T-shirt" data-src="./assets/img/img_5.jpg">
             <div class="item__data">
-              <h4 class="item__data--title text-uppercase">PALM ANGELS</h4>
+              <h4 class="item__data--title item_name" data-title="PALM ANGELS">PALM ANGELS</h4>
               <span class="item__data--desc">Unicorn print T-shirt</span>
               <div class="item__data--price">
                 <span class="discount"></span>
-                <span class="regular">£8</span>
+                <span class="regular item_price" data-price="£8">£8</span>
               </div>
-              <span class="item__data--number">3</span>
+              <input type="text" value="3" class="item__data--number item_Quantity" maxlength="3">
               <div class="item__data--button">
-                <span class="hovered">Add to cart</span>
+                <a class="item_add hovered" href="javascript:;">Add to cart</a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 col-xl-3 mar">
-          <div class="item text-center">
-            <img src="./assets/img/whishlist.svg" alt="" class="star">
-            <img src="./assets/img/img_6.jpg" class="item__image" alt="">
+          <div class="item text-center simpleCart_shelfItem">
+            <div class="star"></div>
+            <img src="./assets/img/img_6.jpg" class="item__image" alt="Denim shirt" data-src="./assets/img/img_6.jpg">
             <div class="item__data">
-              <h4 class="item__data--title text-uppercase">AMI ALEXANDRE MATTIUSSI</h4>
+              <h4 class="item__data--title item_name" data-title="AMI ALEXANDRE MATTIUSSI">AMI ALEXANDRE MATTIUSSI</h4>
               <span class="item__data--desc">Denim shirt</span>
               <div class="item__data--price">
                 <span class="discount"></span>
-                <span class="regular">£16</span>
+                <span class="regular item_price" data-price="£16">£16</span>
               </div>
-              <span class="item__data--number">0</span>
-              <div class="item__data--button added">
-                <span class="hovered">In cart</span>
+                <input type="text" value="0" class="item__data--number item_Quantity" maxlength="3">
+              <div class="item__data--button">
+                <a class="item_add hovered" href="javascript:;">Add to cart</a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 col-xl-3 mar">
-          <div class="item text-center">
-            <img src="./assets/img/whishlist.svg" alt="" class="star">
-            <img src="./assets/img/img_7.jpg" class="item__image" alt="">
+          <div class="item text-center simpleCart_shelfItem">
+            <div class="star"></div>
+            <img src="./assets/img/img_7.jpg" class="item__image" alt="Ami print T-shirt" data-src="./assets/img/img_7.jpg">
             <div class="item__data">
-              <h4 class="item__data--title text-uppercase">AMI ALEXANDRE MATTIUSSI</h4>
+              <h4 class="item__data--title item_name" data-title="AMI ALEXANDRE MATTIUSSI">AMI ALEXANDRE MATTIUSSI</h4>
               <span class="item__data--desc">Ami print T-shirt</span>
               <div class="item__data--price">
                 <span class="discount"></span>
-                <span class="regular">£7</span>
+                <span class="regular item_price" data-price="£7">£7</span>
               </div>
-              <span class="item__data--number">3</span>
+              <input type="text" value="3" class="item__data--number item_Quantity" maxlength="3">
               <div class="item__data--button">
-                <span class="hovered">Add to cart</span>
+                <a class="item_add hovered" href="javascript:;">Add to cart</a>
               </div>
             </div>
           </div>
         </div>
 
         <div class="col-md-6 col-lg-4 col-xl-3 mar">
-          <div class="item text-center">
-            <img src="./assets/img/whishlist.svg" alt="" class="star">
-            <img src="./assets/img/img_8.jpg" class="item__image" alt="">
+          <div class="item text-center simpleCart_shelfItem">
+            <div class="star"></div>
+            <img src="./assets/img/img_8.jpg" class="item__image" alt="Cockerel print t-shirt" data-src="./assets/img/img_8.jpg">
             <div class="item__data">
-              <h4 class="item__data--title text-uppercase">DOLCE & GABBANA</h4>
+              <h4 class="item__data--title item_name" data-title="DOLCE & GABBANA">DOLCE & GABBANA</h4>
               <span class="item__data--desc">Cockerel print t-shirt</span>
               <div class="item__data--price">
                 <span class="discount"></span>
-                <span class="regular">£24</span>
+                <span class="regular item_price" data-price="£24">£24</span>
               </div>
-              <span class="item__data--number">5</span>
+              <input type="text" value="5" class="item__data--number item_Quantity" maxlength="3">
               <div class="item__data--button">
-                <span class="hovered">Add to cart</span>
+                <a class="item_add hovered" href="javascript:;">Add to cart</a>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="modal fade" id="cartModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Your Cart</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <ul class="cart__list">
+
+              </ul>
+
+              <div class="total_price"><span>£</span><div class="simpleCart_grandTotal"></div></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
       </div>
     </div>
 
@@ -205,6 +229,8 @@
   </footer>
 
   <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/tether.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
   <script src="assets/js/simpleCart.js"></script>
   <script src="assets/js/scripts.min.js"></script>
   </body>
