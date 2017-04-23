@@ -50,7 +50,7 @@ simpleCart.bind( "afterAdd" , function( item  ) {
     }
 });
 
-//Cart logic
+//ADD LOGIC
 var addButton = $('.item_add');
 
 addButton.each(function(){
@@ -59,14 +59,10 @@ addButton.each(function(){
   var price = $(this).parent().siblings().children('.regular').attr("data-price");
   var inCart = 'In cart';
 
-
-
-
-
   $(this).on('click', function(e){
     var self = $(this);
      var quantity = $(this).parent().siblings('.item__data--number').val();
-     var html_cart = '<li class="li"><img src="'+src+'"><div class="details"><h6>'+title+'</h6></div><span class="number">'+quantity+'</span> x <span class="price">'+price+'</span><span class="remove__cart">&times;</span></li>';
+     var html_cart = '<li class="li"><img src="'+src+'"><div class="details"><h6>'+title+'</h6></div><span class="number" data-number="'+quantity+'">'+quantity+'</span> x <span class="price" data-price="'+price+'">'+price+'</span><span class="remove__cart">&times;</span></li>';
      e.preventDefault();
 
      if ( quantity > 0 ) {
@@ -80,6 +76,18 @@ addButton.each(function(){
   });
 });
 
+//REMOVE LOGIC
+var removeCart = $(document).find('.remove__cart');
+$('#cartModal').on('show.bs.modal', function (e) {
+  $('.cart__list').on('click', '.remove__cart', function(){
+    var sef = $(this);
+    sef.each(function(){
+
+      $(this).parent().remove();
+    });
+  });
+
+});
 
 //Favorites
 var fav = $('.star');
