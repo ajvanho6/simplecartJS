@@ -5829,7 +5829,7 @@ a:focus, button:focus {
   text-align: right;
   padding-top: 10px; }
 
-.total_price .simpleCart_grandTotal {
+.total_price .simpleCart_total {
   display: inline-block; }
 
 span.remove__cart {

@@ -82,7 +82,6 @@ $('#cartModal').on('show.bs.modal', function (e) {
   $('.cart__list').on('click', '.remove__cart', function(){
     var sef = $(this);
     sef.each(function(){
-
       $(this).parent().remove();
     });
   });
