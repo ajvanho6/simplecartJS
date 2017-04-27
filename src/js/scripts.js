@@ -28,10 +28,10 @@ value.each(function(index, el) {
       email: "you@yours.com"
     },
     cartColumns: [
-      { view: function(item, column){
-        return"<img src='"+item.get('image')+"'>";
-     },
-    attr: 'image' },
+           { view: function(item, column){
+              return"<img src='"+item.get('image')+"'>";
+           },
+          attr: 'image' },
 
            { attr: "name" , label: false },
 
@@ -40,10 +40,8 @@ value.each(function(index, el) {
            { attr: "price", label: false, view: "currency"},
 
            { view:'remove', text: "", label: false},
-
          ],
      cartStyle: "div"
-
     });
 
 //change currency
@@ -63,7 +61,6 @@ simpleCart.bind( "afterAdd" , function( item  ) {
   if( item.get( 'quantity' ) === 0 ){
     return false;
   }
-
 
  });
 
@@ -88,10 +85,6 @@ simpleCart.bind( 'update' , function(){
 
 //ADD LOGIC
 
-
-
-
-
 addButton.each(function(){
 
   $(this).on('click', function(e){
@@ -102,7 +95,7 @@ addButton.each(function(){
       if ( quantity > 0 ) {
           self.parent().addClass('added');
           self.text(inCart);
-        }
+      }
     });
 
   });

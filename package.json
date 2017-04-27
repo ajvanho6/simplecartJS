@@ -1,12 +1,12 @@
 {
-  "name": "bootstrap-postcss-boilerplate",
-  "title": "Postcss Boilerplate",
+  "name": "simpleCart-js",
+  "title": "SimpleCart JS demo",
   "author": "Ivan Baresic",
   "url": "https://www.linkedin.com/in/ibaresic",
   "version": "1.0.1",
   "license": "MIT",
-  "repository": "https://github.com/ajvanho6/bootstrap4-postcss-bolierplate.git",
-  "description" : "Bolierplate bootstrap-postcss",
+  "repository": "https://github.com/ajvanho6/simplecartJS.git",
+  "description" : "Basic usage of simplecart api",
   "devDependencies": {
     "browser-sync": "^2.10.0",
     "gulp": "^3.9.0",
