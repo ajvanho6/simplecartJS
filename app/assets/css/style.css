@@ -5833,14 +5833,16 @@ a:focus, button:focus {
   font-family: "Lato_Bold";
   color: #444A59;
   font-size: 0.75rem;
-  line-height: 0.875rem; }
-
-.itemRow .item-quantity {
+  line-height: 0.875rem;
   position: absolute;
   left: 60px;
-  bottom: 5px;
+  top: 20px; }
+
+.itemRow .item-quantity {
   font-family: "Lato";
-  color: #444A59; }
+  color: #444A59;
+  margin-right: auto;
+  padding-top: 20px; }
 
 .itemRow .item-quantity:after {
   content: 'x';
@@ -5849,11 +5851,13 @@ a:focus, button:focus {
   margin-left: 3px; }
 
 .itemRow .item-price {
-  position: absolute;
-  left: 80px;
-  bottom: 5px;
   font-family: "Lato";
-  color: #444A59; }
+  color: #444A59;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding-left: 3px;
+  padding-top: 20px; }
 
 .itemRow .item-price:before {
   content: '£';

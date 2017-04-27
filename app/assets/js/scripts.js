@@ -76,13 +76,20 @@ simpleCart.bind( "afterAdd" , function( item  ) {
 
 });
 
-// simpleCart.bind( 'update' , function(){
-//   console.log( "Whoa, the cart total is now at " + simpleCart.toCurrency( simpleCart.grandTotal() ) + "! Nice!" );
-//   // $('.itemRow .item-quantity').after('<div id="space">x</div>');
-//
-// });
+simpleCart.bind( 'update' , function(){
+
+  if(simpleCart.items().length == 0){
+    addButton.each(function(){
+      $(this).parent().removeClass('added');
+      $(this).text(addCart);
+    });
+  }
+ });
 
 //ADD LOGIC
+
+
+
 
 
 addButton.each(function(){
@@ -90,18 +97,14 @@ addButton.each(function(){
   $(this).on('click', function(e){
     var self = $(this);
     var quantity = $(this).parent().siblings('.item__data--number').val();
-
     e.preventDefault();
-
-     if ( quantity > 0 ) {
-
-
-       simpleCart.bind( "afterAdd" , function( item  ) {
+  simpleCart.bind( "afterAdd" , function( item  ) {
+      if ( quantity > 0 ) {
           self.parent().addClass('added');
           self.text(inCart);
+        }
+    });
 
-        });
-     }
   });
 });
 

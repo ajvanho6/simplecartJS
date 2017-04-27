@@ -71,14 +71,17 @@
   color:$add_to;
   font-size: 12px;
   line-height: 14px;
+  position: absolute;
+  left: 60px;
+  top:20px;
 }
 
 .itemRow .item-quantity {
-    position: absolute;
-    left: 60px;
-    bottom: 5px;
     font-family: $regular;
     color:$add_to;
+    margin-right: auto;
+    padding-top:20px;
+
 }
 
 .itemRow .item-quantity::after{
@@ -89,11 +92,11 @@
 }
 
 .itemRow .item-price{
-  position: absolute;
-  left: 80px;
-  bottom: 5px;
   font-family: $regular;
   color:$add_to;
+  flex:1;
+  padding-left: 3px;
+  padding-top:20px;
 }
 
 .itemRow .item-price::before{
