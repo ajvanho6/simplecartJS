@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap v4.0.0-alpha.6 (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -5841,12 +5842,24 @@ a:focus, button:focus {
   font-family: "Lato";
   color: #444A59; }
 
+.itemRow .item-quantity:after {
+  content: 'x';
+  font-family: "Lato";
+  color: #444A59;
+  margin-left: 3px; }
+
 .itemRow .item-price {
   position: absolute;
-  left: 75px;
+  left: 80px;
   bottom: 5px;
   font-family: "Lato";
   color: #444A59; }
+
+.itemRow .item-price:before {
+  content: '£';
+  font-family: "Lato";
+  color: #444A59;
+  margin-left: 1px; }
 
 .itemRow .item-remove {
   margin-left: auto;
@@ -5862,6 +5875,13 @@ a:focus, button:focus {
 
 .itemRow .item-remove a:hover, .itemRow .item-remove a:focus {
   text-decoration: none; }
+
+div#space {
+  position: absolute;
+  left: 68px;
+  bottom: 5px;
+  font-family: "Lato";
+  color: #444A59; }
 
 footer {
   background: #ffffff;

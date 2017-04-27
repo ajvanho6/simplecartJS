@@ -81,12 +81,26 @@
     color:$add_to;
 }
 
+.itemRow .item-quantity::after{
+  content: 'x';
+  font-family: $regular;
+  color:$add_to;
+  margin-left: 3px;
+}
+
 .itemRow .item-price{
   position: absolute;
-  left: 75px;
+  left: 80px;
   bottom: 5px;
   font-family: $regular;
   color:$add_to;
+}
+
+.itemRow .item-price::before{
+  content: '£';
+  font-family: $regular;
+  color:$add_to;
+  margin-left: 1px;
 }
 
 .itemRow .item-remove {
@@ -105,4 +119,12 @@
 
 .itemRow .item-remove a:hover, .itemRow .item-remove a:focus{
   text-decoration: none;
+}
+
+div#space {
+    position: absolute;
+    left: 68px;
+    bottom: 5px;
+    font-family: $regular;
+    color:$add_to;
 }

@@ -61,23 +61,26 @@ var addCart = 'Add to cart';
 //helper functions
 simpleCart.bind( "afterAdd" , function( item  ) {
   if( item.get( 'quantity' ) === 0 ){
-
-    // addButton.each(function(){
-    //   $(this).parent().removeClass('added');
-    //   $(this).text(addCart);
-    // });
-
     return false;
   }
 
+
  });
+
 
  simpleCart.bind('beforeAdd', function (item) {
     var requestedQuantity = item.get('quantity');
     if (requestedQuantity === 0) {
         return false;
     }
+
 });
+
+// simpleCart.bind( 'update' , function(){
+//   console.log( "Whoa, the cart total is now at " + simpleCart.toCurrency( simpleCart.grandTotal() ) + "! Nice!" );
+//   // $('.itemRow .item-quantity').after('<div id="space">x</div>');
+//
+// });
 
 //ADD LOGIC
 
