@@ -5765,34 +5765,6 @@ a:focus, button:focus {
   background-image: url("../../assets/img/active_whish.svg") !important;
   transition: all .1s ease; }
 
-.cart__list {
-  margin: 0;
-  padding: 0; }
-
-.cart__list li {
-  list-style-type: none;
-  display: block;
-  border-bottom: 1px solid #efefef;
-  overflow: hidden;
-  color: #444A59;
-  font-family: "Lato";
-  letter-spacing: 0.075rem;
-  font-size: 0.75rem;
-  padding: 10px 0;
-  position: relative; }
-
-.cart__list img {
-  width: 40px;
-  margin-right: 20px;
-  float: left; }
-
-.cart__list h6 {
-  letter-spacing: 0.075rem;
-  font-family: "Lato_Bold";
-  color: #444A59;
-  font-size: 0.75rem;
-  line-height: 0.875rem; }
-
 .modal-title {
   letter-spacing: 0.0875rem;
   font-family: "Lato_Bold";
@@ -5819,7 +5791,30 @@ a:focus, button:focus {
 .modal-body {
   padding: 10px 15px; }
 
-.modal-body .total_price {
+.itemRow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border-bottom: 1px solid #efefef;
+  overflow: hidden;
+  color: #444A59;
+  font-family: "Lato";
+  letter-spacing: 0.075rem;
+  font-size: 0.75rem;
+  padding: 10px 0; }
+
+.itemRow .item-image img {
+  width: 40px;
+  margin-right: 20px; }
+
+.total_price {
   letter-spacing: 0.0875rem;
   font-family: "Lato_Bold";
   color: #444A59;
@@ -5832,19 +5827,41 @@ a:focus, button:focus {
 .total_price .simpleCart_total {
   display: inline-block; }
 
-span.remove__cart {
-  display: block;
-  font-size: 1.875rem;
-  padding: 10px;
-  cursor: pointer;
-  position: relative;
-  z-index: 20;
+.itemRow .item-name {
+  letter-spacing: 0.075rem;
+  font-family: "Lato_Bold";
+  color: #444A59;
+  font-size: 0.75rem;
+  line-height: 0.875rem; }
+
+.itemRow .item-quantity {
   position: absolute;
-  top: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
-  right: 20px;
+  left: 60px;
+  bottom: 5px;
+  font-family: "Lato";
+  color: #444A59; }
+
+.itemRow .item-price {
+  position: absolute;
+  left: 75px;
+  bottom: 5px;
+  font-family: "Lato";
+  color: #444A59; }
+
+.itemRow .item-remove {
+  margin-left: auto;
   cursor: pointer; }
+
+.itemRow .item-remove a {
+  letter-spacing: 0.075rem;
+  font-family: "Lato_Bold";
+  color: #444A59;
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  text-decoration: none; }
+
+.itemRow .item-remove a:hover, .itemRow .item-remove a:focus {
+  text-decoration: none; }
 
 footer {
   background: #ffffff;

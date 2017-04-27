@@ -1,34 +1,4 @@
-.cart__list {
-  margin:0;
-  padding: 0;
-}
 
-.cart__list li{
-  list-style-type: none;
-  display: block;
-  border-bottom:1px solid #efefef;
-  overflow: hidden;
-  color:$add_to;
-  font-family: $regular;
-  letter-spacing: 1.2px;
-  font-size: 12px;
-  padding: 10px 0;
-  position: relative;
-}
-
-.cart__list img{
-  width:40px;
-  margin-right: 20px;
-  float:left;
-}
-
-.cart__list h6{
-  letter-spacing: 1.2px;
-  font-family: $bold;
-  color:$add_to;
-  font-size: 12px;
-  line-height: 14px;
-}
 .modal-title{
   letter-spacing: 1.4px;
   font-family: $bold;
@@ -59,7 +29,28 @@
   padding: 10px 15px;
 }
 
-.modal-body .total_price{
+
+.itemRow{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  border-bottom:1px solid #efefef;
+  overflow: hidden;
+  color:$add_to;
+  font-family: $regular;
+  letter-spacing: 1.2px;
+  font-size: 12px;
+  padding: 10px 0;
+}
+
+
+.itemRow .item-image img{
+  width: 40px;
+  margin-right: 20px;
+}
+
+ .total_price{
   letter-spacing: 1.4px;
   font-family: $bold;
   color:$add_to;
@@ -74,16 +65,44 @@
   display: inline-block;
 }
 
-span.remove__cart {
-    display: block;
-    font-size: 30px;
-    padding: 10px;
-    cursor: pointer;
-    position: relative;
-    z-index: 20;
+.itemRow .item-name{
+  letter-spacing: 1.2px;
+  font-family: $bold;
+  color:$add_to;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.itemRow .item-quantity {
     position: absolute;
-    top: 50%;
-    transform: translate(0,-50%);
-    right: 20px;
+    left: 60px;
+    bottom: 5px;
+    font-family: $regular;
+    color:$add_to;
+}
+
+.itemRow .item-price{
+  position: absolute;
+  left: 75px;
+  bottom: 5px;
+  font-family: $regular;
+  color:$add_to;
+}
+
+.itemRow .item-remove {
+    margin-left: auto;
     cursor: pointer;
+}
+
+.itemRow .item-remove a{
+  letter-spacing: 1.2px;
+  font-family: $bold;
+  color:$add_to;
+  font-size: 14px;
+  line-height: 14px;
+  text-decoration: none;
+}
+
+.itemRow .item-remove a:hover, .itemRow .item-remove a:focus{
+  text-decoration: none;
 }

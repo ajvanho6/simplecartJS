@@ -26,21 +26,50 @@ value.each(function(index, el) {
     checkout: {
       type: "PayPal",
       email: "you@yours.com"
-    }
-  });
+    },
+    cartColumns: [
+      { view: function(item, column){
+        return"<img src='"+item.get('image')+"'>";
+     },
+    attr: 'image' },
+
+           { attr: "name" , label: false },
+
+           { attr: "quantity", label: false, view: "text"},
+
+           { attr: "price", label: false, view: "currency"},
+
+           { view:'remove', text: "", label: false},
+
+         ],
+     cartStyle: "div"
+
+    });
 
 //change currency
   simpleCart.currency({
     code: "GBP" ,
     symbol: "" ,
-    name: "British Pound"
+    name: "British Pound",
 });
+
+
+var addButton = $('.item_add');
+var inCart = 'In cart';
+var addCart = 'Add to cart';
 
 //helper functions
 simpleCart.bind( "afterAdd" , function( item  ) {
   if( item.get( 'quantity' ) === 0 ){
+
+    // addButton.each(function(){
+    //   $(this).parent().removeClass('added');
+    //   $(this).text(addCart);
+    // });
+
     return false;
   }
+
  });
 
  simpleCart.bind('beforeAdd', function (item) {
@@ -51,42 +80,28 @@ simpleCart.bind( "afterAdd" , function( item  ) {
 });
 
 //ADD LOGIC
-var addButton = $('.item_add');
+
 
 addButton.each(function(){
-  var title = $(this).parent().siblings('.item__data--title').attr("data-title");
-  var src = $(this).parent().parent().siblings('.item__image').attr("data-src");
-  var price = $(this).parent().siblings().children('.regular').attr("data-price");
-  var inCart = 'In cart';
 
   $(this).on('click', function(e){
     var self = $(this);
-     var quantity = $(this).parent().siblings('.item__data--number').val();
-     var html_cart = '<li class="li"><img src="'+src+'"><div class="details"><h6>'+title+'</h6></div><span class="number" data-number="'+quantity+'">'+quantity+'</span> x <span class="price" data-price="'+price+'">'+price+'</span><span class="remove__cart">&times;</span></li>';
-     e.preventDefault();
+    var quantity = $(this).parent().siblings('.item__data--number').val();
+
+    e.preventDefault();
 
      if ( quantity > 0 ) {
-       $(document).find(".cart__list").append(html_cart);
+
 
        simpleCart.bind( "afterAdd" , function( item  ) {
           self.parent().addClass('added');
           self.text(inCart);
+
         });
      }
   });
 });
 
-//REMOVE LOGIC
-var removeCart = $(document).find('.remove__cart');
-$('#cartModal').on('show.bs.modal', function (e) {
-  $('.cart__list').on('click', '.remove__cart', function(){
-    var sef = $(this);
-    sef.each(function(){
-      $(this).parent().remove();
-    });
-  });
-
-});
 
 //Favorites
 var fav = $('.star');
